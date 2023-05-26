@@ -16,5 +16,12 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.Location = new Point((this.ClientSize.Width - pictureBox1.Width) / 2, (this.ClientSize.Height - pictureBox1.Height) / 2);
+        }
     }
 }
